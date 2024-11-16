@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include <complex.h>
 #include <math.h>
 #include "ppm.h"
@@ -27,7 +29,7 @@ double cy( int y )
 int main(int argc, char *argv[])
 {
     struct ppm_image im;
-    ppm_image_init( &amp;im , SIZEX , SIZEY );
+    ppm_image_init( &im , SIZEX , SIZEY );
  
     int i,j;
     double colref = 255.0/log(ITER);
@@ -44,7 +46,7 @@ int main(int argc, char *argv[])
             {
                 double mod = cabs(z);
  
-                if( TRSH &lt; mod )
+                if( TRSH < mod )
                 {
                     break;
                 }
@@ -55,12 +57,12 @@ int main(int argc, char *argv[])
             }
  
             int grey = colref*log(iter);
-            ppm_image_setpixel(&amp;im, i,j, grey, grey , grey );
+            ppm_image_setpixel(&im, i,j, grey, grey , grey );
         }
     }
  
-    ppm_image_dump( &amp;im, "m.ppm");
-    ppm_image_release( &amp;im );
+    ppm_image_dump( &im, "m.ppm");
+    ppm_image_release( &im );
  
  
     return 0;
