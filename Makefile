@@ -6,7 +6,8 @@ TARGET = test mandel
 all: $(TARGET)
 
 libppm.so: ppm.c  # Compile PPM lib to libppm.so
-    $(CC) $(CFLAGS) -fpic -shared $^ -o $@  
+    $(CC) $(CFLAGS) -fpic -shared ppm.c -o libppm.so
+
 
 test: main.c libppm.so  # Compile test executable
     $(CC) $(CFLAGS) $(LDFLAGS) main.c -lppm -L. -o $@ -lm -Wl,-rpath,. 

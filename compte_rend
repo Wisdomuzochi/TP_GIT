@@ -87,14 +87,19 @@ Exercice3:
 2.La fusion automatique échoue a cause des conflits. il faut régler les conflits
 manuellement.
 
-3. •Valider valider tout d'abord les modifications : les conserver  avant de
+3.4. •Valider valider tout d'abord les modifications : les conserver  avant de
 changer de branche  avec les commande : git add 
                                         git commit -m "Enregistrement des modifications locales"
 
-   •la branche color_support n'apparaît pas dans la liste, pour la 
+    •la branche color_support n'apparaît pas dans la liste, pour la 
 récupérer du dépôt distant:  git fetch origin.
 
-   •Créer la branche locale à partir de la branche distante :git checkout -b color_support origin/color_support
+    •Créer la branche locale à partir de la branche distante :git checkout -b color_support origin/color_support
     
-   • ramener cette branche au-dessus de la master: git merge color_support.
-
+    • ramener cette branche au-dessus de la master: git merge color_support.
+    
+  Exercice 4:
+  1. depot utilisé : Github.
+  
+  2. 2-Je fais un git status pour voir sur quel branche je suis après je fais un git add * puis un
+git commit -m ’’message ’’ et puis un git push pour finir
