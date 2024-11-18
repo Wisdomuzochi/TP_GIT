@@ -64,7 +64,9 @@ int ppm_image_dump; // sauvegarder une image en créant un fichier .
 
 
 exercice 2:
-1.
+1. exécuté sur le terminal :
+git add mandel.c --> git commit -m "modification_du_fichier"
+git add Makefile --> git commit -m "Makefile_modifie"
 
 
 2. explication des étapes du code:
@@ -76,3 +78,11 @@ e)Lignes 32-34 : Déclaration des variables et calcul du facteur de couleur
 f)Lignes 36-55 : Boucles imbriquées pour parcourir chaque pixel
 g)Lignes 57-58 : Calcul de la couleur et définition du pixel
 h)Lignes 60-63 : Enregistrement de l'image et libération de la mémoire
+
+ 
+Exercice3:
+
+1. On peut faire un git merge color_support étant sur la branche master.
+
+2.La fusion automatique échoue a cause des conflits. il faut régler les conflits
+manuellement.
