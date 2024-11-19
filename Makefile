@@ -10,7 +10,7 @@ libppm.so: ppm.c  # Compile PPM lib to libppm.so
 
 
 test: main.c libppm.so  # Compile test executable
-	$(CC) $(CFLAGS) $(LDFLAGS) main.c -lppm -L. -o $@ -lm -Wl,-rpath,. 
+	$(CC) $(CFLAGS) $(LDFLAGS) main.c -lppm -L. -o $@ -lm -Wl,-rpath,.
 
 mandel: mandel.c libppm.so  # Compile mandelbrot code source
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -lppm -L. -o $@ -lm -Wl,-rpath,.  
