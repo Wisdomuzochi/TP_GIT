@@ -9,7 +9,7 @@ l'aide de :git config --global user.name "Your Name" et
   
     main.c
   le fichier main.c initialise une image, la remplie  avec les motifs de couleur, sauvegarde l'image puis libère la mémoire allouée.Il remplit l'image avec des valeurs de couleur basées sur les coordonnées des
-pixels et génère une diagonale rouge à travers l'image. Ensuite, il écrit l'image au format PPM dans
+pixels et génère une diagonale à travers l'image. Ensuite, il écrit l'image au format PPM dans
 un fichier appelé "test.ppm".
     
    mandel.c
@@ -23,10 +23,8 @@ calculs  pour déterminer les couleurs des pixels de l'image PPM.
    
  ppm.c:
  Ce code en C définit des fonctions pour initialiser, libérer et enregistrer une image PPM
-(Portable Pixel Map).
-• La fonction ppm_image_init initialise une image PPM avec une largeur et une hauteurspécifiées en allouant de la mémoire pour les pixels de l'image.
-• La fonction ppm_image_release libère la mémoire allouée pour les pixels de l'image
-PPM.
+• La fonction ppm_image_init initialise une image PPM avec une largeur et une hauteur spécifiées en allouant de la mémoire pour les pixels de l'image.
+• La fonction ppm_image_release libère la mémoire allouée pour les pixels de l'image PPM.
 • La fonction ppm_image_dump sauvegarde l'image PPM dans un fichier en précisant les
 dimensions et les pixels de l'image en format binaire.
 Ces fonctions permettent de travailler avec des images au format PPM en C.
@@ -87,9 +85,9 @@ Exercice3:
 2.La fusion automatique échoue a cause des conflits. il faut régler les conflits
 manuellement.
 
-3.4. •Valider valider tout d'abord les modifications : les conserver  avant de
+3.4. •Valider tout d'abord les modifications : les conserver  avant de
 changer de branche  avec les commande : git add 
-                                        git commit -m "Enregistrement des modifications locales"
+                                        git commit -m "Enregistrement_des_modifications_locales"
 
     •la branche color_support n'apparaît pas dans la liste, pour la 
 récupérer du dépôt distant:  git fetch origin.
@@ -102,4 +100,4 @@ récupérer du dépôt distant:  git fetch origin.
   1. depot utilisé : Github.
   
   2. 2-Je fais un git status pour voir sur quel branche je suis après je fais un git add * puis un
-git commit -m ’’message ’’ et puis un git push pour finir
+git commit -m ’’message ’’ et puis un git push pour finir.
